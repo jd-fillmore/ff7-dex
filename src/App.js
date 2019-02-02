@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Hero></Hero>
+        <Hero text="Welcome to the Final Fantasy 7 Dex."></Hero>
         <Footer text='Powered by Reactjs, Flexbox and SCSS.'></Footer>
       </div>
     );
