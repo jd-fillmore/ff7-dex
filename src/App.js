@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div className="App">
         <Hero></Hero>
-        <Footer></Footer>
+        <Footer text='Powered by Reactjs, Flexbox and SCSS.'></Footer>
       </div>
     );
   }
