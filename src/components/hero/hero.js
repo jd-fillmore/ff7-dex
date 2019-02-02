@@ -6,7 +6,7 @@ class Hero extends Component {
       <div>
         <section className="hero">     
           <h1>(Logo)</h1>
-          <p id="subtitle">Welcome to the Final Fantasy 7 Dex.</p>
+          <p id="subtitle">{this.props.text}</p>
         </section>
       </div>
     )
