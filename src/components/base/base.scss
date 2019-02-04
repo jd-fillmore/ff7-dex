@@ -1,0 +1,54 @@
+/*---Base---*/
+ 
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans");
+ 
+.container {
+  display: flex;
+  width: 1400px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+ 
+.col {
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+}
+ 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+    .container {
+        flex-direction: row;
+    }
+    .col {
+        flex: 1;
+    }
+}
+ 
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 20px #eee;
+}
+ 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", cursive;
+  line-height: 1.6;
+}
+ 
+p,
+ol,
+ul,
+a {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
