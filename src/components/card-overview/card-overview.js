@@ -13,7 +13,7 @@ class CardOverview extends Component {
               <img src={Image} alt="image"/>
             </Column>
             <Column>
-              <h5>Character Name</h5>
+              <p>Character Name</p>
             </Column>
           </Container>
         </section>
