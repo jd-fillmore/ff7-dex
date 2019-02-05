@@ -1,18 +1,43 @@
 /*---Base---*/
+
+/*------------------------Mixins-----------------------*/
+
+// Breakpoints
+
+// 1200px
+@mixin bp-desktop {
+  @media only screen and (max-width: 75em) {
+    @content;
+  }
+}
+
+// 1024px
+@mixin bp-tablet {
+  @media only screen and (max-width: 64em) {
+    @content;
+  }
+}
+
+// 768px
+@mixin bp-mobile {
+  @media only screen and (max-width: 48em) {
+    @content;
+  }
+}
  
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans");
  
 .container {
   display: flex;
-  width: 1400px;
-  max-width: 100%;
-  margin: 0 auto;
+  @include bp-mobile {
+    display: block;
+  }
 }
  
-.col {
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem;
-}
+// .col {
+//   padding-right: 0.9375rem;
+//   padding-left: 0.9375rem;
+// }
  
 img {
   max-width: 100%;
@@ -43,6 +68,27 @@ h5,
 h6 {
   font-family: "Josefin Sans", cursive;
   line-height: 1.6;
+}
+
+h1 {
+  font-size: 36px;
+  @include bp-mobile {
+    font-size: 28px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  @include bp-mobile {
+    font-size: 26px;
+  }
+}
+
+h3 {
+  font-size: 28px;
+  @include bp-mobile {
+    font-size: 22px;
+  }
 }
  
 p,

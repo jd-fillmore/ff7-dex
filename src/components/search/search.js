@@ -5,7 +5,7 @@ class Search extends Component {
     return (
       <div>
         <section className="search">     
-          <p>Search</p>
+          <input type="search" placeholder="Type in a character's name..."></input>
         </section>
       </div>
     )

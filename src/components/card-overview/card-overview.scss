@@ -1,4 +1,10 @@
-h3 {
-    color: red;
-    font-size: 12px;
+/*---Card-Overview---*/
+
+.card-overview {
+    padding: 15px;
+    border-bottom: 3px solid #fff;
+    &:focus, &:hover {
+        background: #4a4a4a;
+        cursor: pointer;
+    }
 }

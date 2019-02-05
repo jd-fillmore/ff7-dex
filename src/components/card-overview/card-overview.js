@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
-import Image from '../../img/cloud.png'; 
+import Image from '../../img/cloud.png';
+import Container from '../container/container';
+import Column from '../column/column';
 
 class CardOverview extends Component {
   render() {
     return (
       <div>
-        <section className="card-overview">     
-          <h3>Card Overview</h3>
-          <img src={Image} alt="image"/>
-          <h5>Character Name</h5>
+        <section className="card-overview">
+          <Container>
+            <Column>
+              <img src={Image} alt="image"/>
+            </Column>
+            <Column>
+              <h5>Character Name</h5>
+            </Column>
+          </Container>
         </section>
       </div>
     )

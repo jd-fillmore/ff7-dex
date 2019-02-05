@@ -7,8 +7,14 @@ class Sidebar extends Component {
     return (
       <div>
         <section className="sidebar">     
-          <h3>Sidebar</h3>
           <Search></Search>
+          <CardOverview></CardOverview>
+          <CardOverview></CardOverview>
+          <CardOverview></CardOverview>
+          <CardOverview></CardOverview>
+          <CardOverview></CardOverview>
+          <CardOverview></CardOverview>
+          <CardOverview></CardOverview>
           <CardOverview></CardOverview>
         </section>
       </div>
