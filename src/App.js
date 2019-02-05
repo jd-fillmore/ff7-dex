@@ -5,8 +5,11 @@ import Content from './components/content/content';
 import Sidebar from './components/sidebar/sidebar';
 
 // Styles
-import "./components/card-overview/card-overview.scss";
 import "./components/base/base.scss";
+import "./components/card-overview/card-overview.scss";
+import "./components/content/content.scss";
+import "./components/intro/intro.scss";
+import "./components/search/search.scss";
 import "./components/sidebar/sidebar.scss";
 
 class App extends Component {
