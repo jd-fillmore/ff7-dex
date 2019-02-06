@@ -16,7 +16,7 @@ class App extends Component {
   state = {
     characters: [
       {
-        name: "Cloud Strife",
+        Name: "Cloud Strife",
         Job: "Mercenary",
         Age: 21,
         Weapon: "Sword",
@@ -27,7 +27,7 @@ class App extends Component {
         Description: `The main character in Final Fantasy VII. Originally a member of SOLDIER, he is now a mercenary who will take any job. After being hired by AVALANCHE, he gradually gets caught up in a massive struggle for the life of the planet. His enormous sword can cut almost anything in two.`
       },
       {
-        name: "Aerith Gainsborough",
+        Name: "Aerith Gainsborough",
         Job: "Flower Merchant",
         Age: 22,
         Weapon: "Rod",
@@ -38,7 +38,7 @@ class App extends Component {
         Description: "Young, beautiful, and somewhat mysterious. Aeris met Cloud while selling flowers on the streets of Midgar. She decided to join him soon after. Her unusual abilities enable her to use magic, but she seems more interested in deepening the love triangle between herself, Cloud, and Tifa."
       },
       {
-        name: "Tifa Lockheart",
+        Name: "Tifa Lockheart",
         Job: "Bar Hostess",
         Age: 20,
         Weapon: "Glove",
@@ -49,7 +49,7 @@ class App extends Component {
         Description: "Bright and optimistic, Tifa always cheers up the others when they're down. But don't let her looks fool you, she can decimate almost any enemy with her  fists. She is one of the main members of of AVALANCHE. She and Cloud were childhood friends, and although she has strong feelings for him, she would never admit it.."
       },
       {
-        name: "Barrett Wallace",
+        Name: "Barrett Wallace",
         Job: "Leader of Avalanche",
         Age: 35,
         Weapon: "Gun-Arm",
@@ -60,7 +60,7 @@ class App extends Component {
         Description: "Head of the underground resistance movement, Avalanche, Barret is fighting the mega-conglomerate Shinra, Inc. which has monopolized Mako energy by building special reactors to suck it our of the planet. Barret depends on brute strength and his Gun-Arm to see him through. His wife died in an accident sever years ago, and he know lives with his daughter Marlene."
       },
       {
-        name: "Red XIII",
+        Name: "Red XIII",
         Job: "Beast",
         Age: 48,
         Weapon: "Headdress",
@@ -71,7 +71,7 @@ class App extends Component {
         Description: "Just as his name implies, he is an animal with fire red fur. But under his fierce exterior is an intelligence surpassing that of any human's. His sharp claws and fangs make him good at close-range fighting, but other than that, not much is known about him. It's not even certain that Red XIII is his real name. A real enigma."
       },
       {
-        name: "Cid HighWind",
+        Name: "Cid HighWind",
         Job: "Pilot",
         Age: 32,
         Weapon: "Spear",
@@ -83,7 +83,7 @@ class App extends Component {
       attack regardless of the danger.`
       },
       {
-        name: "Sephiroth",
+        Name: "Sephiroth",
         Job: "Soldier Officer",
         Age: "Unknown",
         Weapon: "Long Sword",
@@ -95,7 +95,7 @@ class App extends Component {
         fight on your side.`
       },
       {
-        name: "Yuffie Kisaragi",
+        Name: "Yuffie Kisaragi",
         Job: "Materia Hunter",
         Age: 16,
         Weapon: "Boomerang",
@@ -106,7 +106,7 @@ class App extends Component {
         Description: `Even amongst the elite troops of SOLDIER, Sephiroth is known to be the best. His past is locked away in a confidential file held by Shinra, Inc. His giant sword, which onlyhe can handle, has extremely destructive power. Said to have disappeared in the battle a few years ago, his current whereabouts are unknown.`
       },
       {
-        name: "Cait Sith",
+        Name: "Cait Sith",
         Job: "Toysaurus",
         Age: "Unknown",
         Weapon: "Megaphone",
@@ -117,7 +117,7 @@ class App extends Component {
         Description: `Cait Sith rides around on the back of a huge stuffed Mog he magically brought to life. Megaphone in hand, he's always shouting orders and creating dopey attacks. When his slot machine attack works, the enemy lines look like an overturned toy box. His hobby is fortunetelling, but like his personality, it's pretty unreliable.`
       },
       {
-        name: "Vincent Valentine",
+        Name: "Vincent Valentine",
         Job: "Professional Vampire",
         Age: 27,
         Weapon: "Gun",
@@ -139,7 +139,7 @@ class App extends Component {
               <Sidebar />
             </div>
             <div className="col">
-              <Content characters={this.props.characters}/>
+              <Content characters={this.state.characters}/>
             </div>
           </div>
         </section>
