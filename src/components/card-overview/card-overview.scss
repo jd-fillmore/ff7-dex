@@ -6,5 +6,12 @@
     &:focus, &:hover {
         background: #4a4a4a;
         cursor: pointer;
+        transition: .2s;
+    }
+    .col {
+        flex: inherit;
+        img {
+            padding-right: 30px;
+        }
     }
 }
