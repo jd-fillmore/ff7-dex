@@ -135,10 +135,10 @@ class App extends Component {
       <div className="App">
         <section className="main">
           <div className="container">
-            <div className="col">
+            <div className="col first-col">
               <Sidebar />
             </div>
-            <div className="col">
+            <div className="col second-col">
               <Content characters={this.state.characters}/>
             </div>
           </div>
