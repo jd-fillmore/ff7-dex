@@ -26,7 +26,7 @@ class Content extends Component {
             title="Final Fantasy 7 Character Stats App"
             text="Search and discover the stats for the main characters of the best game ever made.">
           </Intro>
-          {characterList}
+          {/* {characterList} */}
         </section>
       </div>
     )
