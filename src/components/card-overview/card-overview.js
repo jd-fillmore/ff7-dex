@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Image from '../../img/cloud.png';
 import Container from '../container/container';
 import Column from '../column/column';
 
@@ -10,10 +9,10 @@ class CardOverview extends Component {
         <section className="card-overview">
           <Container>
             <Column>
-              <img src={Image} alt="image"/>
+              <img src={this.props.image} alt="image"/>
             </Column>
             <Column>
-              <p>Character Name</p>
+              <p>{this.props.name}</p>
             </Column>
           </Container>
         </section>
