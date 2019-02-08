@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Intro from '../intro/intro';
+import CardDetailed from '../card-detailed/card-detailed';
 
 class Content extends Component {
   render() {
@@ -26,6 +27,7 @@ class Content extends Component {
             title="Final Fantasy 7 Character Stats App"
             text="Search and discover the stats for the main characters of the best game ever made.">
           </Intro>
+          <CardDetailed/>
           {/* {characterList} */}
         </section>
       </div>
