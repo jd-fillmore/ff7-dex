@@ -11,7 +11,7 @@ class Content extends Component {
     const filteredCharacters = characters.filter(characters => {
       if (characters.id === 6) {
         return (
-          <div className="characters">
+          <div className="characters" key={characters.id}>
             <p>Name: {characters.Name}</p>
             <p>ID: {characters.id}</p>
             <p>Job: {characters.Job}</p>
@@ -32,13 +32,7 @@ class Content extends Component {
 
     return (
       <div>
-        <section className="content">
-          {filteredCharacters}
-          {/* <Intro
-            title="Final Fantasy 7 Character Stats App"
-            text="Search and discover the stats for the main characters of the Final Fantasy 7.">
-          </Intro> */}
-        </section>
+        {filteredCharacters}
       </div>
     )
   }

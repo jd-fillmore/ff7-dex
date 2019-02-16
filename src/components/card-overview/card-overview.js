@@ -10,7 +10,7 @@ class CardOverview extends Component {
         <section className="card-overview" onClick={CardDetailed}>
           <Container>
             <Column>
-              <img src={this.props.image} alt="image"/>
+              <img src={this.props.image} alt={this.props.name}/>
             </Column>
             <Column>
               <p>{this.props.name}</p>
