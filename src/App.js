@@ -17,6 +17,7 @@ class App extends Component {
     characters: [
       {
         Name: "Cloud Strife",
+        id: 1,
         Job: "Mercenary",
         Age: 21,
         Weapon: "Sword",
@@ -28,6 +29,7 @@ class App extends Component {
       },
       {
         Name: "Aerith Gainsborough",
+        id: 2,
         Job: "Flower Merchant",
         Age: 22,
         Weapon: "Rod",
@@ -39,6 +41,7 @@ class App extends Component {
       },
       {
         Name: "Tifa Lockheart",
+        id: 3,
         Job: "Bar Hostess",
         Age: 20,
         Weapon: "Glove",
@@ -50,6 +53,7 @@ class App extends Component {
       },
       {
         Name: "Barrett Wallace",
+        id: 4,
         Job: "Leader of Avalanche",
         Age: 35,
         Weapon: "Gun-Arm",
@@ -61,6 +65,7 @@ class App extends Component {
       },
       {
         Name: "Red XIII",
+        id: 5,
         Job: "Beast",
         Age: 48,
         Weapon: "Headdress",
@@ -72,6 +77,7 @@ class App extends Component {
       },
       {
         Name: "Cid HighWind",
+        id: 6,
         Job: "Pilot",
         Age: 32,
         Weapon: "Spear",
@@ -84,6 +90,7 @@ class App extends Component {
       },
       {
         Name: "Sephiroth",
+        id: 7,
         Job: "Soldier Officer",
         Age: "Unknown",
         Weapon: "Long Sword",
@@ -96,6 +103,7 @@ class App extends Component {
       },
       {
         Name: "Yuffie Kisaragi",
+        id: 8,
         Job: "Materia Hunter",
         Age: 16,
         Weapon: "Boomerang",
@@ -107,6 +115,7 @@ class App extends Component {
       },
       {
         Name: "Cait Sith",
+        id: 9,
         Job: "Toysaurus",
         Age: "Unknown",
         Weapon: "Megaphone",
@@ -118,6 +127,7 @@ class App extends Component {
       },
       {
         Name: "Vincent Valentine",
+        id: 10,
         Job: "Professional Vampire",
         Age: 27,
         Weapon: "Gun",
