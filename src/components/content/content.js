@@ -23,12 +23,12 @@ class Content extends Component {
     return (
       <div>
         <section className="content">
-          <Intro 
+          {/* <Intro 
             title="Final Fantasy 7 Character Stats App"
             text="Search and discover the stats for the main characters of the best game ever made.">
-          </Intro>
-          <CardDetailed/>
-          {/* {characterList} */}
+          </Intro> */}
+          {/* <CardDetailed/> */}
+          {characterList}
         </section>
       </div>
     )
