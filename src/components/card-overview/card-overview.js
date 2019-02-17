@@ -4,6 +4,7 @@ import Column from '../column/column';
 import CardDetailed from '../card-detailed/card-detailed';
 
 class CardOverview extends Component {
+
   render() {
     return (
       <div>

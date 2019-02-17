@@ -14,3 +14,9 @@ Install NPM
 Start NPM
 
 ```npm start```
+
+<h3>What this app should do:</h3>
+
+1. On load, displays character overview components on the side and an intro area in the main content on the right.
+2. On click of one of the characters, the sidebar stays, and the white area on the right fills with just their character stats with their own URL.
+3. They can also type a character's name, and auto fill will help filter out the results below.
