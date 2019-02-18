@@ -10,7 +10,7 @@ class CardDetailed extends Component {
 
     // Filter the chracters and return only whose 'id' belongs to that of '6'
     const filteredCharacters = characters
-      .filter(character => character.id === 2)
+      .filter(character => character.id === 4)
       .map(character => (
         <div className="characters" key={character.id}>
           <p>Name: {character.Name}</p>
