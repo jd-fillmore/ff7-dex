@@ -3,6 +3,7 @@ import Container from "../container/container";
 import Column from "../column/column";
 
 class CardDetailed extends Component {
+
   render() {
     // Grab the 'characters' object from App.js, and assign it to 'this.props'
     const { characters } = this.props;
