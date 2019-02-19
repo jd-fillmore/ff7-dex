@@ -3,6 +3,8 @@ import React, { Component } from "react";
 // Components
 import Content from "./components/content/content";
 import Sidebar from "./components/sidebar/sidebar";
+import Container from './components/container/container';
+import Column from './components/column/column';
 
 // Styles
 import "./components/base/base.scss";
@@ -14,18 +16,29 @@ import "./components/sidebar/sidebar.scss";
 
 class App extends Component {
 
+  // Set the state of 'null' - meaning, on window load, don't pull in any character data on the intro screen
+  state = {
+    selected: null
+  };
+
+  onCharacterClick = id => {
+    this.setState({ selected: id });
+  };
+
   render() {
     return (
       <div className="App">
         <section className="main">
-          <div className="container">
-            <div className="col first-col">
-              <Sidebar />
-            </div>
-            <div className="col second-col">
-              <Content></Content>
-            </div>
-          </div>
+          <Container>
+            <Column className="first-col">
+              {/* Pass the onClick method into the Sidebar, cause that's where it's happening */}
+              <Sidebar onClick={this.onCharacterClick} />
+            </Column>
+            <Column className="second-col">
+              {/* Pass the currently selected item into the content, where it's needed */}
+              <Content selected={this.state.selected}></Content>
+            </Column>
+          </Container>
         </section>
       </div>
     );

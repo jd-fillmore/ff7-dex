@@ -3,9 +3,9 @@ import Intro from "../intro/intro";
 import Container from "../container/container";
 import Column from "../column/column";
 import CardDetailed from "../card-detailed/card-detailed";
+import logo from "../../img/logo.jpg";
 
 class Content extends Component {
-
   state = {
     characters: [
       {
@@ -30,7 +30,8 @@ class Content extends Component {
         Birthdate: "February 7",
         Birthplace: "Unknown",
         Bloodtype: "O",
-        Description: "Young, beautiful, and somewhat mysterious. Aeris met Cloud while selling flowers on the streets of Midgar. She decided to join him soon after. Her unusual abilities enable her to use magic, but she seems more interested in deepening the love triangle between herself, Cloud, and Tifa."
+        Description:
+          "Young, beautiful, and somewhat mysterious. Aeris met Cloud while selling flowers on the streets of Midgar. She decided to join him soon after. Her unusual abilities enable her to use magic, but she seems more interested in deepening the love triangle between herself, Cloud, and Tifa."
       },
       {
         Name: "Tifa Lockheart",
@@ -42,7 +43,8 @@ class Content extends Component {
         Birthdate: "May 3",
         Birthplace: "Nibelheim",
         Bloodtype: "B",
-        Description: "Bright and optimistic, Tifa always cheers up the others when they're down. But don't let her looks fool you, she can decimate almost any enemy with her  fists. She is one of the main members of of AVALANCHE. She and Cloud were childhood friends, and although she has strong feelings for him, she would never admit it.."
+        Description:
+          "Bright and optimistic, Tifa always cheers up the others when they're down. But don't let her looks fool you, she can decimate almost any enemy with her  fists. She is one of the main members of of AVALANCHE. She and Cloud were childhood friends, and although she has strong feelings for him, she would never admit it.."
       },
       {
         Name: "Barrett Wallace",
@@ -54,7 +56,8 @@ class Content extends Component {
         Birthdate: "December 15",
         Birthplace: "Corel Village",
         Bloodtype: "O",
-        Description: "Head of the underground resistance movement, Avalanche, Barret is fighting the mega-conglomerate Shinra, Inc. which has monopolized Mako energy by building special reactors to suck it our of the planet. Barret depends on brute strength and his Gun-Arm to see him through. His wife died in an accident sever years ago, and he know lives with his daughter Marlene."
+        Description:
+          "Head of the underground resistance movement, Avalanche, Barret is fighting the mega-conglomerate Shinra, Inc. which has monopolized Mako energy by building special reactors to suck it our of the planet. Barret depends on brute strength and his Gun-Arm to see him through. His wife died in an accident sever years ago, and he know lives with his daughter Marlene."
       },
       {
         Name: "Red XIII",
@@ -66,7 +69,8 @@ class Content extends Component {
         Birthdate: "Unknown",
         Birthplace: "Cosmo Canyon",
         Bloodtype: "Unknown",
-        Description: "Just as his name implies, he is an animal with fire red fur. But under his fierce exterior is an intelligence surpassing that of any human's. His sharp claws and fangs make him good at close-range fighting, but other than that, not much is known about him. It's not even certain that Red XIII is his real name. A real enigma."
+        Description:
+          "Just as his name implies, he is an animal with fire red fur. But under his fierce exterior is an intelligence surpassing that of any human's. His sharp claws and fangs make him good at close-range fighting, but other than that, not much is known about him. It's not even certain that Red XIII is his real name. A real enigma."
       },
       {
         Name: "Cid HighWind",
@@ -136,15 +140,21 @@ class Content extends Component {
   render() {
     return (
       <div>
-        <Container>
-          <Column>
-            <Intro
-              title="Final Fantasy 7 Character Stats App"
-              text="Choose a character on the left to show their in game stats."
-            />
-            <CardDetailed characters={this.state.characters}></CardDetailed>
-          </Column>
-        </Container>
+        <section className="content">
+          <Container>
+            <Column>
+              <Intro
+                title="Final Fantasy 7 Character Stats App"
+                text="Choose a character on the left to show their in game stats."
+                logo={logo}
+              />
+              <CardDetailed
+                characters={this.state.characters}
+                selected={this.props.selected}
+              />
+            </Column>
+          </Container>
+        </section>
       </div>
     );
   }

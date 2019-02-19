@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
-import Container from '../container/container';
-import Column from '../column/column';
-import CardDetailed from '../card-detailed/card-detailed';
+import React, { Component } from "react";
+import Container from "../container/container";
+import Column from "../column/column";
 
 class CardOverview extends Component {
-
   render() {
     return (
       <div>
-        <section className="card-overview" onClick={CardDetailed}>
+        {/* Here, we finally use the function we passed all the way down the road */}
+        <section className="card-overview" onClick={this.props.onClick}>
           <Container>
             <Column>
-              <img src={this.props.image} alt={this.props.name}/>
+              <img src={this.props.image} alt={this.props.name} />
             </Column>
             <Column>
               <p>{this.props.name}</p>
@@ -19,7 +18,7 @@ class CardOverview extends Component {
           </Container>
         </section>
       </div>
-    )
+    );
   }
 }
 

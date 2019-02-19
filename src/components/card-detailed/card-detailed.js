@@ -2,36 +2,46 @@ import React, { Component } from "react";
 import Container from "../container/container";
 import Column from "../column/column";
 
-class CardDetailed extends Component {
+import "../card-detailed/card-detailed.scss";
 
+class CardDetailed extends Component {
   render() {
-    // Grab the 'characters' object from App.js, and assign it to 'this.props'
-    const { characters } = this.props;
+    // Grab the 'characters' object and the 'selected' value State from App.js, and assign it to 'this.props'
+    const { characters, selected } = this.props;
 
     // Filter the chracters and return only whose 'id' belongs to that of '6'
     const filteredCharacters = characters
-      .filter(character => character.id === 4)
+      .filter(character => character.id === selected)
       .map(character => (
-        <div className="characters" key={character.id}>
-          <p>Name: {character.Name}</p>
-          <p>Job: {character.Job}</p>
-          <p>Age: {character.Age}</p>
-          <p>Weapon: {character.Weapon}</p>
-          <p>Height: {character.Height}</p>
-          <p>Birthdate: {character.Birthdate}</p>
-          <p>Birthplace: {character.Birthplace}</p>
-          <p>Bloodtype: {character.Bloodtype}</p>
-          <p>Description: {character.Description}</p>
-        </div>
+        <section className="card-detailed" key={character.id}>
+          <Column>
+            <h2>{character.Name}</h2>
+            <p id="job"><em>{character.Job}</em></p>
+          </Column>
+          <Column>
+            <p>Age: {character.Age}</p>
+          </Column>
+          <Column>
+            <p>Weapon: {character.Weapon}</p>
+          </Column>
+          <Column>
+            <p>Height: {character.Height}</p>
+          </Column>
+          <Column>
+            <p>Birthdate: {character.Birthdate}</p>
+          </Column>
+          <Column>
+            <p>Bloodtype: {character.Bloodtype}</p>
+          </Column>
+          <Column>
+            <p>Description: {character.Description}</p>
+          </Column>
+        </section>
       ));
 
     return (
       <div>
-        <Container>
-          <Column>
-            {filteredCharacters}
-          </Column>
-        </Container>
+        {filteredCharacters}
       </div>
     );
   }
