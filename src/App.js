@@ -8,6 +8,8 @@ import Column from './components/column/column';
 
 // Styles
 import "./components/base/base.scss";
+import "./components/container/container.scss";
+import "./components/column/column.scss";
 import "./components/card-overview/card-overview.scss";
 import "./components/content/content.scss";
 import "./components/intro/intro.scss";
