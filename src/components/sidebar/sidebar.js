@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 // Components
-import Search from "../search/search";
 import CardOverview from "../card-overview/card-overview";
 
 // Images
@@ -21,7 +20,6 @@ class Sidebar extends Component {
     return (
       <div>
         <section className="sidebar">
-          <Search placeholder="Type in a character's name..." />
           <CardOverview
             image={cloudImage}
             name="Cloud Strife"
