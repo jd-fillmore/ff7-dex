@@ -3,7 +3,7 @@ import Intro from "../intro/intro";
 import Container from "../container/container";
 import Column from "../column/column";
 import CardDetailed from "../card-detailed/card-detailed";
-import logo from "../../img/logo.jpg";
+import logo from "../../img/logo.png";
 
 class Content extends Component {
   state = {

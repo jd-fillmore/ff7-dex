@@ -9,7 +9,7 @@ class CardDetailed extends Component {
     // Grab the 'characters' object and the 'selected' value State from App.js, and assign it to 'this.props'
     const { characters, selected } = this.props;
 
-    // Filter the chracters and return only whose 'id' belongs to that of '6'
+    // Filter the chracters and return only whose 'id' belongs to that one specifically
     const filteredCharacters = characters
       .filter(character => character.id === selected)
       .map(character => (
@@ -22,23 +22,23 @@ class CardDetailed extends Component {
           </Column>
           <Container>
             <Column>
-              <p>Age: {character.Age}</p>
+              <p><span>Age:</span> {character.Age}</p>
             </Column>
             <Column>
-              <p>Weapon: {character.Weapon}</p>
+              <p><span>Weapon:</span> {character.Weapon}</p>
             </Column>
             <Column>
-              <p>Height: {character.Height}</p>
+              <p><span>Height:</span> {character.Height}</p>
             </Column>
             <Column>
-              <p>Birthdate: {character.Birthdate}</p>
+              <p><span>Birthdate:</span> {character.Birthdate}</p>
             </Column>
             <Column>
-              <p>Bloodtype: {character.Bloodtype}</p>
+              <p><span>Bloodtype:</span>: {character.Bloodtype}</p>
             </Column>
           </Container>
           <Column>
-            <p>Description: {character.Description}</p>
+            <p>{character.Description}</p>
           </Column>
         </section>
       ));

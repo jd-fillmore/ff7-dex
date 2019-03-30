@@ -2,9 +2,11 @@
 
 .card-overview {
     padding: 15px;
-    border-bottom: 3px solid #2d2d2d;
+    border-bottom: 1px solid #bfdcf5;
+    transition: .2s;
     &:focus, &:hover {
-        background: #4a4a4a;
+        background: #bfdcf5;
+        transform: translate3D(0,-5px,0);
         cursor: pointer;
         transition: .2s;
     }

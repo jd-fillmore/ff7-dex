@@ -35,21 +35,17 @@ body {
   display: flex;
   @include bp-mobile {
     display: block;
+    text-align: center;
   }
 }
- 
-// .col {
-//   padding-right: 0.9375rem;
-//   padding-left: 0.9375rem;
-// }
- 
+
 img {
   max-width: 100%;
   height: auto;
 }
 
 .main {
-  background: #131313;
+  background: #f9f9f9;
     .container {
         flex-direction: row;
         align-items: center;
@@ -77,7 +73,7 @@ h5,
 h6 {
   font-family: "Josefin Sans", cursive;
   line-height: 1.6;
-  color: #fff !important;
+  color: #26a3b9 !important;
 }
 
 h1 {
@@ -107,5 +103,5 @@ ul,
 a {
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
-  color: #a7a7a7 !important;
+  color: #656565 !important;
 }
