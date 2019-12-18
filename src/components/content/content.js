@@ -4,6 +4,8 @@ import Container from "../container/container";
 import Column from "../column/column";
 import CardDetailed from "../card-detailed/card-detailed";
 import logo from "../../img/logo.png";
+import cloudSingle from "../../img/cloud-single.png";
+import aerithSingle from "../../img/aerith-single.png";
 
 class Content extends Component {
   state = {
@@ -11,6 +13,7 @@ class Content extends Component {
       {
         Name: "Cloud Strife",
         id: 1,
+        Image: cloudSingle,
         Job: "Mercenary",
         Age: 21,
         Weapon: "Sword",
@@ -23,6 +26,7 @@ class Content extends Component {
       {
         Name: "Aerith Gainsborough",
         id: 2,
+        Image: aerithSingle,
         Job: "Flower Merchant",
         Age: 22,
         Weapon: "Rod",
@@ -147,6 +151,7 @@ class Content extends Component {
                 title="Final Fantasy 7 Character Stats App"
                 text="Choose a character on the left to show their in game stats."
                 logo={logo}
+                class="logo"
               />
               <CardDetailed
                 characters={this.state.characters}

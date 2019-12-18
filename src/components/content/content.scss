@@ -23,6 +23,8 @@
     }
   }
   img {
-    width: 600px;
+    &.logo {
+      width: 600px;
+    }
   }
 }

@@ -15,6 +15,7 @@ class CardDetailed extends Component {
       .map(character => (
         <section className="card-detailed" key={character.id}>
           <Column>
+            <img src={character.Image} alt={character.id} />
             <h2>{character.Name}</h2>
             <p id="job">
               <em>{character.Job}</em>
@@ -22,19 +23,29 @@ class CardDetailed extends Component {
           </Column>
           <Container>
             <Column>
-              <p><span>Age:</span> {character.Age}</p>
+              <p>
+                <span>Age:</span> {character.Age}
+              </p>
             </Column>
             <Column>
-              <p><span>Weapon:</span> {character.Weapon}</p>
+              <p>
+                <span>Weapon:</span> {character.Weapon}
+              </p>
             </Column>
             <Column>
-              <p><span>Height:</span> {character.Height}</p>
+              <p>
+                <span>Height:</span> {character.Height}
+              </p>
             </Column>
             <Column>
-              <p><span>Birthdate:</span> {character.Birthdate}</p>
+              <p>
+                <span>Birthdate:</span> {character.Birthdate}
+              </p>
             </Column>
             <Column>
-              <p><span>Bloodtype:</span>: {character.Bloodtype}</p>
+              <p>
+                <span>Bloodtype:</span>: {character.Bloodtype}
+              </p>
             </Column>
           </Container>
           <Column>
