@@ -1,19 +1,28 @@
 /*---Content---*/
 
 .content {
-    background: #f9f9f9;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    h1,h2,h3,h4,h5,h6,p{
-        color: #333;
+  background: url("../../img/main-bg.jpg") no-repeat center center;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: #333;
+  }
+  .intro {
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+      margin-bottom: 0px;
     }
-    .intro {
-        margin: 0 auto;
-        text-align: center;
-        h1 {
-            margin-bottom: 0px;
-        }
-    }
+  }
+  img {
+    width: 600px;
+  }
 }

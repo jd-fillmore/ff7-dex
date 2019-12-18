@@ -95,8 +95,7 @@ class Content extends Component {
         Birthdate: "Unknown",
         Birthplace: "Unknown",
         Bloodtype: "Unknown",
-        Description: `Although you'd never know it by looking at her, Yuffie comes from a long line of ninja. She forced herself into the group just to get a "certain something". She's sneaky, arrogant, and "way" selfish. But with her super shuriken and her special skills, there isn't anyone else you'd rather have
-        fight on your side.`
+        Description: `Even amongst the elite troops of SOLDIER, Sephiroth is known to be the best. His past is locked away in a confidential file held by Shinra, Inc. His giant sword, which onlyhe can handle, has extremely destructive power. Said to have disappeared in the battle a few years ago, his current whereabouts are unknown.`
       },
       {
         Name: "Yuffie Kisaragi",
@@ -108,7 +107,8 @@ class Content extends Component {
         Birthdate: "November 20",
         Birthplace: "Wutai",
         Bloodtype: "A",
-        Description: `Even amongst the elite troops of SOLDIER, Sephiroth is known to be the best. His past is locked away in a confidential file held by Shinra, Inc. His giant sword, which onlyhe can handle, has extremely destructive power. Said to have disappeared in the battle a few years ago, his current whereabouts are unknown.`
+        Description: `Although you'd never know it by looking at her, Yuffie comes from a long line of ninja. She forced herself into the group just to get a "certain something". She's sneaky, arrogant, and "way" selfish. But with her super shuriken and her special skills, there isn't anyone else you'd rather have
+        fight on your side.`
       },
       {
         Name: "Cait Sith",
