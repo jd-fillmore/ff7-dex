@@ -2,6 +2,7 @@
 
 .content {
   background: url("../../img/main-bg.jpg") no-repeat center center;
+  background-size: cover;
   padding: 15px;
   display: flex;
   align-items: center;
@@ -13,18 +14,15 @@
   h5,
   h6,
   p {
-    color: #333;
+    color: #fff !important;
   }
   .intro {
     margin: 0 auto;
     text-align: center;
-    h1 {
-      margin-bottom: 0px;
-    }
   }
   img {
     &.logo {
-      width: 600px;
+      width: 400px;
     }
   }
 }

@@ -148,8 +148,7 @@ class Content extends Component {
           <Container>
             <Column>
               <Intro
-                title="Final Fantasy 7 Character Stats App"
-                text="Choose a character on the left to show their in game stats."
+                text="Choose a character to show their stats."
                 logo={logo}
                 class="logo"
               />

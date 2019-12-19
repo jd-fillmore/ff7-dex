@@ -1,19 +1,28 @@
 /*---Card-Overview---*/
 
 .card-overview {
-    padding: 15px;
-    border-bottom: 1px solid #bfdcf5;
-    transition: .2s;
-    &:focus, &:hover {
-        background: #bfdcf5;
-        transform: translate3D(0,-5px,0);
-        cursor: pointer;
-        transition: .2s;
+  padding: 15px;
+  border-top: 3px solid #47c6ff;
+  transition: 0.2s;
+  background-image: linear-gradient(to right, #000009, #1b3872);
+  &:focus,
+  &:hover {
+    background-image: linear-gradient(to left, #000009, #1b3872);
+    transform: translate3D(5px, -5px, 0px);
+    cursor: pointer;
+    box-shadow: 0 4px 17px rgba(0, 160, 209, 0.35);
+    transition: 0.2s;
+  }
+  .col {
+    flex: inherit;
+    @media (max-width: 1024px) {
+      display: block;
     }
-    .col {
-        flex: inherit;
-        img {
-            padding-right: 30px;
-        }
+    img {
+      padding-right: 30px;
     }
+    p {
+      color: #fff !important;
+    }
+  }
 }
