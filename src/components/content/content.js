@@ -4,6 +4,11 @@ import Container from "../container/container";
 import Column from "../column/column";
 import CardDetailed from "../card-detailed/card-detailed";
 import logo from "../../img/logo.png";
+import cloudSingle from "../../img/cloud-single.png";
+import aerithSingle from "../../img/aerith-single.png";
+import tifaSingle from "../../img/tifa-single.png";
+import barrettSingle from "../../img/barrett-single.png";
+import sephSingle from "../../img/seph-single.png";
 
 class Content extends Component {
   state = {
@@ -11,6 +16,7 @@ class Content extends Component {
       {
         Name: "Cloud Strife",
         id: 1,
+        Image: cloudSingle,
         Job: "Mercenary",
         Age: 21,
         Weapon: "Sword",
@@ -23,6 +29,7 @@ class Content extends Component {
       {
         Name: "Aerith Gainsborough",
         id: 2,
+        Image: aerithSingle,
         Job: "Flower Merchant",
         Age: 22,
         Weapon: "Rod",
@@ -36,6 +43,7 @@ class Content extends Component {
       {
         Name: "Tifa Lockheart",
         id: 3,
+        Image: tifaSingle,
         Job: "Bar Hostess",
         Age: 20,
         Weapon: "Glove",
@@ -49,6 +57,7 @@ class Content extends Component {
       {
         Name: "Barrett Wallace",
         id: 4,
+        Image: barrettSingle,
         Job: "Leader of Avalanche",
         Age: 35,
         Weapon: "Gun-Arm",
@@ -88,6 +97,7 @@ class Content extends Component {
       {
         Name: "Sephiroth",
         id: 7,
+        Image: sephSingle,
         Job: "Soldier Officer",
         Age: "Unknown",
         Weapon: "Long Sword",
@@ -95,8 +105,7 @@ class Content extends Component {
         Birthdate: "Unknown",
         Birthplace: "Unknown",
         Bloodtype: "Unknown",
-        Description: `Although you'd never know it by looking at her, Yuffie comes from a long line of ninja. She forced herself into the group just to get a "certain something". She's sneaky, arrogant, and "way" selfish. But with her super shuriken and her special skills, there isn't anyone else you'd rather have
-        fight on your side.`
+        Description: `Even amongst the elite troops of SOLDIER, Sephiroth is known to be the best. His past is locked away in a confidential file held by Shinra, Inc. His giant sword, which onlyhe can handle, has extremely destructive power. Said to have disappeared in the battle a few years ago, his current whereabouts are unknown.`
       },
       {
         Name: "Yuffie Kisaragi",
@@ -108,7 +117,8 @@ class Content extends Component {
         Birthdate: "November 20",
         Birthplace: "Wutai",
         Bloodtype: "A",
-        Description: `Even amongst the elite troops of SOLDIER, Sephiroth is known to be the best. His past is locked away in a confidential file held by Shinra, Inc. His giant sword, which onlyhe can handle, has extremely destructive power. Said to have disappeared in the battle a few years ago, his current whereabouts are unknown.`
+        Description: `Although you'd never know it by looking at her, Yuffie comes from a long line of ninja. She forced herself into the group just to get a "certain something". She's sneaky, arrogant, and "way" selfish. But with her super shuriken and her special skills, there isn't anyone else you'd rather have
+        fight on your side.`
       },
       {
         Name: "Cait Sith",
@@ -144,9 +154,9 @@ class Content extends Component {
           <Container>
             <Column>
               <Intro
-                title="Final Fantasy 7 Character Stats App"
-                text="Choose a character on the left to show their in game stats."
+                text="Choose a character to show their stats."
                 logo={logo}
+                class="logo"
               />
               <CardDetailed
                 characters={this.state.characters}

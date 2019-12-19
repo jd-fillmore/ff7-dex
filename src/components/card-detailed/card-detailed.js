@@ -14,32 +14,33 @@ class CardDetailed extends Component {
       .filter(character => character.id === selected)
       .map(character => (
         <section className="card-detailed" key={character.id}>
-          <Column>
-            <h2>{character.Name}</h2>
-            <p id="job">
-              <em>{character.Job}</em>
-            </p>
-          </Column>
           <Container>
-            <Column>
-              <p><span>Age:</span> {character.Age}</p>
+            <Column id="first">
+              <img src={character.Image} alt={character.id} />
+              <h2 id="name">{character.Name}</h2>
+              <p id="job">
+                <em>{character.Job}</em>
+              </p>
             </Column>
             <Column>
-              <p><span>Weapon:</span> {character.Weapon}</p>
-            </Column>
-            <Column>
-              <p><span>Height:</span> {character.Height}</p>
-            </Column>
-            <Column>
-              <p><span>Birthdate:</span> {character.Birthdate}</p>
-            </Column>
-            <Column>
-              <p><span>Bloodtype:</span>: {character.Bloodtype}</p>
+              <p>
+                <span>Age:</span> {character.Age}
+              </p>
+              <p>
+                <span>Weapon:</span> {character.Weapon}
+              </p>
+              <p>
+                <span>Height:</span> {character.Height}
+              </p>
+              <p>
+                <span>Birthdate:</span> {character.Birthdate}
+              </p>
+              <p>
+                <span>Bloodtype:</span> {character.Bloodtype}
+              </p>
+              <p>{character.Description}</p>
             </Column>
           </Container>
-          <Column>
-            <p>{character.Description}</p>
-          </Column>
         </section>
       ));
 
