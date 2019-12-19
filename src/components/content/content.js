@@ -6,6 +6,9 @@ import CardDetailed from "../card-detailed/card-detailed";
 import logo from "../../img/logo.png";
 import cloudSingle from "../../img/cloud-single.png";
 import aerithSingle from "../../img/aerith-single.png";
+import tifaSingle from "../../img/tifa-single.png";
+import barrettSingle from "../../img/barrett-single.png";
+import sephSingle from "../../img/seph-single.png";
 
 class Content extends Component {
   state = {
@@ -40,6 +43,7 @@ class Content extends Component {
       {
         Name: "Tifa Lockheart",
         id: 3,
+        Image: tifaSingle,
         Job: "Bar Hostess",
         Age: 20,
         Weapon: "Glove",
@@ -53,6 +57,7 @@ class Content extends Component {
       {
         Name: "Barrett Wallace",
         id: 4,
+        Image: barrettSingle,
         Job: "Leader of Avalanche",
         Age: 35,
         Weapon: "Gun-Arm",
@@ -92,6 +97,7 @@ class Content extends Component {
       {
         Name: "Sephiroth",
         id: 7,
+        Image: sephSingle,
         Job: "Soldier Officer",
         Age: "Unknown",
         Weapon: "Long Sword",
