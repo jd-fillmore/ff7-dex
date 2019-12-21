@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Column extends Component {
   render() {
-    return (
-      <div className="col">{this.props.children}</div>
-    );
+    return <div className="col">{this.props.children}</div>;
   }
 }
 

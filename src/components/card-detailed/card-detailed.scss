@@ -1,10 +1,22 @@
 /*---Card Detailed---*/
 
 .card-detailed {
-  text-align: center;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
   p {
     &#job {
       margin-top: -25px;
     }
+  }
+  #name,
+  #job {
+    text-align: center;
+  }
+  span {
+    font-family: "Josefin Sans", cursive;
+    font-size: 24px;
+    padding-right: 10px;
   }
 }
