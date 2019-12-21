@@ -5,7 +5,6 @@ import Content from "./components/content/content";
 import Sidebar from "./components/sidebar/sidebar";
 import Container from "./components/container/container";
 import Column from "./components/column/column";
-import Footer from "./components/footer/footer";
 
 // Styles
 import "./components/base/base.scss";
@@ -38,11 +37,6 @@ class App extends Component {
               <Content selected={this.state.selected}></Content>
               {/* Pass the onClick method into the Sidebar, cause that's where it's happening */}
               <Sidebar onClick={this.onCharacterClick} />
-            </Column>
-          </Container>
-          <Container>
-            <Column>
-              <Footer />
             </Column>
           </Container>
         </section>
